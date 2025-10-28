@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import type { CSSProperties } from "react";
 const firstName = 'Miguel Angel';
 const LastName = 'Valenzuela Ortiz';
@@ -45,7 +45,7 @@ export const MyAwesomeApp = () => {
 
     return (
         <>
-            <h1>{firstName}</h1>
+            <h1 data-testid='first-name-title'>{firstName}</h1>
             <h3>{LastName}</h3>
             <p>{favoriteGames.join(', ')}</p>
 
