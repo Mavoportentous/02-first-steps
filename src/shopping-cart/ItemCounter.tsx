@@ -2,8 +2,9 @@ import { useState } from "react";
 //import './ItemCounter.css'
 import styles from './ItemCounter.module.css'
 interface Props {
-    nameProduct: string,
-    quantity: number | undefined
+    nameProduct: string;
+    //quantity: number | undefined
+    quantity?: number;
 }
 export const ItemCounter = ({ nameProduct, quantity = 1 }: Props) => {
 
@@ -18,12 +19,9 @@ export const ItemCounter = ({ nameProduct, quantity = 1 }: Props) => {
         setCount(count - 1);
 
     }
-
     // const handleClick = () => {
     //     console.log(`Click en ${nameProduct}`)
     // }
-
-
     return (
         <section className={styles.itemRow} >
             <span className={styles['item-text']} style={{

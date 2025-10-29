@@ -10,7 +10,7 @@ const addres = {
 }
 
 
-const MyFunctionClick = () => {
+export const MyFunctionClick = () => {
 
     if (isActive === true) { isActive = false }
     else {
@@ -44,13 +44,13 @@ export const MyAwesomeApp = () => {
 
 
     return (
-        <>
+        <div data-testid="div-app">
             <h1 data-testid='first-name-title'>{firstName}</h1>
             <h3>{LastName}</h3>
             <p>{favoriteGames.join(', ')}</p>
 
             {/* Renderizado condicional basado en el estado */}
-            <h1>{isActive ? 'Activo ✅' : 'No activo ❌'}</h1>
+            <h1 data-testid='h1-active-desactive'>{isActive ? 'Activo ✅' : 'No activo ❌'}</h1>
 
             <p>{addres.country + ' ' + addres.zipCode}</p>
 
@@ -61,7 +61,7 @@ export const MyAwesomeApp = () => {
             <button onClick={toggleActive}>
                 Activar | Desactivar
             </button>
-        </>
+        </div>
     );
 };
 // export function MyAwesomeApp() {

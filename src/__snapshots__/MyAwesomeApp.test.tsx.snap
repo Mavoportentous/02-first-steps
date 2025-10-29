@@ -1,0 +1,67 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MyAwesomeApp > should match snapshot 1`] = `
+<div>
+  <div
+    data-testid="div-app"
+  >
+    <h1
+      data-testid="first-name-title"
+    >
+      Miguel Angel
+    </h1>
+    <h3>
+      Valenzuela Ortiz
+    </h3>
+    <p>
+      League of Legends, Control, Stronghold Crusader, Streonghold, Age of Mithology, Ades
+    </p>
+    <h1>
+      Activo ✅
+    </h1>
+    <p>
+      México 54870
+    </p>
+    <p
+      style="background-color: rgb(250, 250, 250); border-radius: 20px; padding: 10px; border-color: blue;"
+    >
+      {"zipCode":"54870","country":"México"}
+    </p>
+    <button>
+      Activar | Desactivar
+    </button>
+  </div>
+</div>
+`;
+
+exports[`MyAwesomeApp > should match snapshot 2`] = `
+<div
+  data-testid="div-app"
+>
+  <h1
+    data-testid="first-name-title"
+  >
+    Miguel Angel
+  </h1>
+  <h3>
+    Valenzuela Ortiz
+  </h3>
+  <p>
+    League of Legends, Control, Stronghold Crusader, Streonghold, Age of Mithology, Ades
+  </p>
+  <h1>
+    Activo ✅
+  </h1>
+  <p>
+    México 54870
+  </p>
+  <p
+    style="background-color: rgb(250, 250, 250); border-radius: 20px; padding: 10px; border-color: blue;"
+  >
+    {"zipCode":"54870","country":"México"}
+  </p>
+  <button>
+    Activar | Desactivar
+  </button>
+</div>
+`;
